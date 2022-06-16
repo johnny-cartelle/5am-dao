@@ -1,0 +1,109 @@
+@import 'mixins.scss';
+
+:root {
+	--color-white: #ffffff;
+	--color-black: #000000;
+	--color--light-grey: #999999;
+	--column-gap: 45px;
+	--column-mobile-gap: 20px;
+	--min-card-width: 350px;
+	--max-card-width: 450px;
+}
+
+body {
+	font-family: 'NeueHaasGroteskDisp Pro';
+	margin: 0;
+	color: var(--color-black);
+	font-smooth: always;
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: transparent;
+	background-color: var(--color-white);
+}
+
+
+a {
+	text-decoration: none;
+	color: inherit;
+
+	&:hover {
+		text-decoration: underline;
+	}
+	
+	&:active, &:visited, &:hover, &:focus {
+		color: inherit;
+	}
+}
+
+p {
+	font-size: 20px;
+	font-weight: 400;
+}
+
+p, li {
+	line-height: 1.4;
+}
+
+strong, b {
+	font-weight: 900;
+}
+
+.light {
+	color: var(--color--light-grey);
+}
+
+.column-title {
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 55px;
+	margin-top: 5px;
+
+	@include column-count("2") {
+		font-size: 16px;
+		margin-top: 0;
+	}
+}
+
+.column-section {
+	display: flex;
+
+	> :nth-child(1) {
+		width: 70px;
+	}
+
+	> :nth-child(2) {
+		flex: 1;
+	}
+
+	&:not(:first-child) {
+		margin-top: 110px;
+	}
+
+	@include column-count("2") {
+		display: block;
+
+		> :nth-child(1) {
+			width: auto;
+		}
+	}
+}
+
+.project-title {
+	font-size: 30px;
+	font-weight: 500;
+}
+
+.disabled {
+	pointer-events: none;
+}
+
+.no-select {
+	-webkit-touch-callout: none; /* iOS Safari */
+	  -webkit-user-select: none; /* Safari */
+	   -khtml-user-select: none; /* Konqueror HTML */
+		 -moz-user-select: none; /* Old versions of Firefox */
+		  -ms-user-select: none; /* Internet Explorer/Edge */
+			  user-select: none; /* Non-prefixed version, currently
+									supported by Chrome, Edge, Opera and Firefox */
+  }
+  
