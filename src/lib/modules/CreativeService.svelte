@@ -10,9 +10,13 @@
 <style lang="scss">
   @import "../../styles/mixins.scss";
 
-  @include column-count("1") {
+  .column-title {
+    visibility: hidden;
+  }
+
+  @include column-count("2") {
     .column-title {
-      visibility: hidden;
+      visibility: visible;
     }
   }
 </style>

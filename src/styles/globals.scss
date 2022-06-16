@@ -55,6 +55,19 @@ strong, b {
 	color: var(--color--light-grey);
 }
 
+.title-tag {
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 50px;
+	width: 100%;
+	text-align: center;
+
+	@include column-count("2") {
+		display: none;
+	}
+}
+
 .column-title {
 	font-size: 14px;
 	font-weight: 700;

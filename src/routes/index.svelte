@@ -28,6 +28,7 @@
 </svelte:head>
 
 <div class="page">
+  <div class="title-tag">Creative Service DAO</div>
   <MainTitle />
 
   <!-- 3 columns -->
