@@ -1,11 +1,11 @@
-import { writable } from 'svelte/store';
+import { writable } from "svelte/store";
 // import LazyLoad from 'vanilla-lazyload';
 
-const SECTION_MAIN = 'main';
-const SECTION_MERIT = 'merit';
-const SECTION_LEGAL = 'legal';
+// const SECTION_MAIN = 'main';
+// const SECTION_MERIT = 'merit';
+// const SECTION_LEGAL = 'legal';
 
-let currentSection = writable({ id: SECTION_MAIN, scrollTarget: 0 });
+// let currentSection = writable({ id: SECTION_MAIN, scrollTarget: 0 });
 // let lazyLoad;
 
 // function changeSection(section) {
@@ -26,4 +26,4 @@ let currentSection = writable({ id: SECTION_MAIN, scrollTarget: 0 });
 // 	}
 // }
 
-export { currentSection, SECTION_MAIN, SECTION_LEGAL, SECTION_MERIT };
+// export { currentSection, SECTION_MAIN, SECTION_LEGAL, SECTION_MERIT };
