@@ -35,8 +35,12 @@ a {
 }
 
 p {
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 400;
+
+	@include column-count("2") {
+		font-size: 20px;
+	}
 }
 
 p, li {
