@@ -1,0 +1,256 @@
+[{
+	"code": "Pacific/Honolulu",
+    "cities": ["Honolulu, Hawaii"]
+}, {
+	"code": "America/Anchorage",
+    "cities": ["Anchorage, Alaska"]
+}, {
+	"code": "America/Santa_Isabel",
+    "cities": ["Baja, California"]
+}, {
+	"code": "America/Los_Angeles",
+    "cities": ["Los Angeles, California"]
+}, {
+	"code": "America/Chihuahua",
+    "cities": ["Chihuahua, Mexico", "La Paz, Mexico", "Mazatlan, Mexico"]
+}, {
+	"code": "America/Phoenix",
+    "cities": ["Phoenix, Arizona"]
+}, {
+	"code": "America/Denver",
+    "cities": ["Denver, Colorado"]
+}, {
+	"code": "America/Guatemala",
+    "cities": ["Guatemala City, Guatemala"]
+}, {
+	"code": "America/Chicago",
+    "cities": ["Chicago, Illinois"]
+}, {
+	"code": "America/Regina",
+    "cities": ["Regina, Saskatchewan"]
+}, {
+	"code": "America/Mexico_City",
+    "cities": ["Guadalajara, Mexico", "Mexico City, Mexico", "Monterrey, Mexico"]
+}, {
+	"code": "America/Bogota",
+    "cities": ["Bogota, Columbia", "Lima, Peru", "Quito, Ecuador"]
+}, {
+	"code": "America/Indiana/Indianapolis",
+    "cities": ["Indianapolis"]
+}, {
+	"code": "America/New_York",
+    "cities": ["New York City, New York"]
+}, {
+	"code": "America/Caracas",
+    "cities": ["Caracas, Venezuela"]
+}, {
+	"code": "America/Halifax",
+    "cities": ["Halifax, Nova Scotia"]
+}, {
+	"code": "America/Asuncion",
+    "cities": ["Asunción, Paraguay"]
+}, {
+	"code": "America/La_Paz",
+    "cities": ["Georgetown, Guyana", "La Paz, Bolivia", "Manaus, Brazil", "San Juan, Puerto Rico"]
+}, {
+	"code": "America/Cuiaba",
+    "cities": ["Cuiaba, Brazil"]
+}, {
+	"code": "America/Santiago",
+    "cities": ["Santiago, Chile"]
+}, {
+	"code": "America/St_Johns",
+    "cities": ["St. John's, Newfoundland"]
+}, {
+	"code": "America/Sao_Paulo",
+    "cities": ["Sao Paulo, Brazil"]
+}, {
+	"code": "America/Godthab",
+    "cities": ["Godthab, Greenland"]
+}, {
+	"code": "America/Cayenne",
+    "cities": ["Cayenne, French Guiana"]
+}, {
+	"code": "America/Argentina/Buenos_Aires",
+    "cities": ["Buenos Aires, Argentina"]
+}, {
+	"code": "America/Montevideo",
+    "cities": ["Montevideo, Uruguay"]
+}, {
+	"code": "Atlantic/Cape_Verde",
+    "cities": ["Cape Verde"]
+}, {
+	"code": "Atlantic/Azores",
+    "cities": ["Azores"]
+}, {
+	"code": "Africa/Casablanca",
+    "cities": ["Casablanca, Morocco"]
+}, {
+	"code": "Atlantic/Reykjavik",
+    "cities": ["Reykjavik, Iceland"]
+}, {
+	"code": "Europe/London",
+    "cities": ["Dublin, Ireland", "Edinburgh, Scotland", "Lisbon, Portugal", "London, England"]
+}, {
+	"code": "Europe/Berlin",
+    "cities": ["Amsterdam, Netherlands", "Berlin, Germany", "Bern, Switzerland", "Rome, Itlay", "Stockholm, Sweden", "Vienna, Austria"]
+}, {
+	"code": "Europe/Paris",
+    "cities": ["Brussels, Belgium", "Copenhagen, Denmark", "Madrid, Spain", "Paris, France"]
+}, {
+	"code": "Africa/Lagos",
+    "cities": ["Lagos, Nigeria"]
+}, {
+	"code": "Europe/Budapest",
+    "cities": ["Budapest, Hungary", "Belgrade, Serbia", "Bratislava, Slovakia", "Ljubljana, Slovenia", "Prague, Czech Republic"]
+}, {
+	"code": "Europe/Warsaw",
+    "cities": ["Warsaw, Poland"]
+}, {
+	"code": "Africa/Windhoek",
+    "cities": ["Windhoek, Namibia"]
+}, {
+	"code": "Europe/Istanbul",
+    "cities": ["Istanbul, Turkey", "Athens, Greece", "Bucharest, Romania"]
+}, {
+	"code": "Europe/Kiev",
+    "cities": ["Kiev, Ukraine", "Helsinki, Finland"]
+}, {
+	"code": "Africa/Cairo",
+    "cities": ["Cairo, Egypt"]
+}, {
+	"code": "Asia/Damascus",
+    "cities": ["Damascus, Syria"]
+}, {
+	"code": "Asia/Amman",
+    "cities": ["Amman, Jordan"]
+}, {
+	"code": "Africa/Johannesburg",
+    "cities": ["Johannesburg, South Africa"]
+}, {
+	"code": "Asia/Jerusalem",
+    "cities": ["Jerusalem, Israel"]
+}, {
+	"code": "Asia/Beirut",
+    "cities": ["Beirut, Lebanon"]
+}, {
+	"code": "Asia/Baghdad",
+    "cities": ["Baghdad, Iraq"]
+}, {
+	"code": "Europe/Minsk",
+    "cities": ["Minsk, Belarus"]
+}, {
+	"code": "Asia/Riyadh",
+    "cities": ["Riyadh, Saudi Arabia"]
+}, {
+	"code": "Africa/Nairobi",
+    "cities": ["Nairobi, Kenya"]
+}, {
+	"code": "Asia/Tehran",
+    "cities": ["Tehran, Iran"]
+}, {
+	"code": "Europe/Moscow",
+    "cities": ["Moscow, Russia"]
+}, {
+	"code": "Asia/Tbilisi",
+    "cities": ["Tbilisi, Georgia"]
+}, {
+	"code": "Asia/Yerevan",
+    "cities": ["Yerevan, Armenia"]
+}, {
+	"code": "Asia/Dubai",
+    "cities": ["Abu Dhabi, UAE", "Dubai, UAE"]
+}, {
+	"code": "Asia/Baku",
+    "cities": ["Baku, Azerbaijan"]
+}, {
+	"code": "Indian/Mauritius",
+    "cities": ["Mauritius"]
+}, {
+	"code": "Asia/Kabul",
+    "cities": ["Kabul, Afghanistan"]
+}, {
+	"code": "Asia/Tashkent",
+    "cities": ["Tashkent, Uzbekistan"]
+}, {
+	"code": "Asia/Karachi",
+    "cities": ["Karachi, Pakistan"]
+}, {
+	"code": "Asia/Colombo",
+    "cities": ["Colombo, Sri Lanka"]
+}, {
+	"code": "Asia/Kolkata",
+    "cities": ["Kolkata, India", "Mumbai, India", "New Delhi, India"]
+}, {
+	"code": "Asia/Kathmandu",
+    "cities": ["Kathmandu, Nepal"]
+}, {
+	"code": "Asia/Almaty",
+    "cities": ["Almaty, Kazakhstan"]
+}, {
+	"code": "Asia/Dhaka",
+    "cities": ["Dhaka, Bangladesh"]
+}, {
+	"code": "Asia/Yangon",
+    "cities": ["Yangon, Myanmar"]
+}, {
+	"code": "Asia/Bangkok",
+    "cities": ["Bangkok, Thailand", "Hanoi, Vietnam", "Jakarta, Indonesia"]
+}, {
+	"code": "Asia/Ulaanbaatar",
+    "cities": ["Ulaanbaatar, Mongolia"]
+}, {
+	"code": "Asia/Shanghai",
+    "cities": ["Shanghai, China", "Beijing, China", "Chongqing, China", "Hong Kong"]
+}, {
+	"code": "Australia/Perth",
+    "cities": ["Perth, Australia"]
+}, {
+	"code": "Asia/Singapore",
+    "cities": ["Singapore", "Kuala Lumpur, Malaysia"]
+}, {
+	"code": "Asia/Taipei",
+    "cities": ["Taipei, Taiwan"]
+}, {
+	"code": "Asia/Seoul",
+    "cities": ["Seoul, South Korea"]
+}, {
+	"code": "Asia/Tokyo",
+    "cities": ["Tokyo, Japan"]
+}, {
+	"code": "Australia/Darwin",
+    "cities": ["Darwin, Australia"]
+}, {
+	"code": "Australia/Adelaide",
+    "cities": ["Adelaide, Australia"]
+}, {
+	"code": "Australia/Hobart",
+    "cities": ["Hobart, Australia"]
+},{
+	"code": "Australia/Brisbane",
+    "cities": ["Brisbane, Australia"]
+}, {
+	"code": "Pacific/Port_Moresby",
+    "cities": ["Port Moresby, Papua New Guinea"]
+}, {
+	"code": "Australia/Sydney",
+    "cities": ["Sydney, Australia", "Melbourne, Australia"]
+}, {
+	"code": "Asia/Vladivostok",
+    "cities": ["Vladivostok, Russia"]
+}, {
+	"code": "Pacific/Guadalcanal",
+    "cities": ["Solomon, Islands"]
+}, {
+	"code": "Pacific/Fiji",
+    "cities": ["Fiji", "Marshall Islands"]
+}, {
+	"code": "Pacific/Auckland",
+    "cities": ["Auckland, New Zealand"]
+}, {
+	"code": "Pacific/Tongatapu",
+    "cities": ["Tonga"]
+}, {
+	"code": "Pacific/Apia",
+    "cities": ["Apia, Samoa"]
+}]
