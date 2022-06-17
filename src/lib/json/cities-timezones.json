@@ -236,9 +236,6 @@
 	"code": "Australia/Sydney",
     "cities": ["Sydney, Australia", "Melbourne, Australia"]
 }, {
-	"code": "Asia/Vladivostok",
-    "cities": ["Vladivostok, Russia"]
-}, {
 	"code": "Pacific/Guadalcanal",
     "cities": ["Solomon, Islands"]
 }, {
