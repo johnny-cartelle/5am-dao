@@ -253,4 +253,7 @@
 }, {
 	"code": "Pacific/Apia",
     "cities": ["Apia, Samoa"]
+}, {
+    "code": "Pacific/Norfolk",
+    "cities": ["Norfolk Islands"]
 }]
