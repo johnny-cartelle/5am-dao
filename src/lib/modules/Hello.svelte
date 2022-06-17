@@ -11,6 +11,7 @@
   .contact-list {
     li {
       font-size: 18px;
+      line-height: 1.4;
     }
   }
 </style>
