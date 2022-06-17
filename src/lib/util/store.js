@@ -17,7 +17,7 @@ function getCity() {
     });
     const time24 = formatter24.format(new Date());
     const timeDif = Math.abs(
-      Date.parse("01/01/2007 5:06") - Date.parse("01/01/2007 " + time24)
+      Date.parse("01/01/2007 5:00") - Date.parse("01/01/2007 " + time24)
     );
 
     if (timeDifference == null || timeDif < timeDifference) {
