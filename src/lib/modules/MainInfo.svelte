@@ -69,4 +69,10 @@
       margin-bottom: 30px;
     }
   }
+
+  .project-title {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
 </style>

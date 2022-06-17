@@ -43,7 +43,7 @@ p {
 	}
 }
 
-p, li {
+p {
 	line-height: 1.4;
 }
 
@@ -73,7 +73,7 @@ strong, b {
 	font-weight: 700;
 	text-transform: uppercase;
 	margin-bottom: 55px;
-	margin-top: 5px;
+	margin-top: 4px;
 
 	@include column-count("2") {
 		font-size: 16px;
@@ -103,11 +103,6 @@ strong, b {
 			width: auto;
 		}
 	}
-}
-
-.project-title {
-	font-size: 30px;
-	font-weight: 500;
 }
 
 .disabled {
