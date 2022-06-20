@@ -26,11 +26,13 @@
   };
 
   function onResize() {
+    let cols = 1;
     breakpoints.forEach((breakpoint) => {
       if (window.innerWidth >= breakpoint.width) {
-        $columns = breakpoint.columns;
+        cols = breakpoint.columns;
       }
     });
+    $columns = cols;
   }
 
   onMount(() => {

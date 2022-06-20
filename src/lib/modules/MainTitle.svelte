@@ -19,6 +19,10 @@
     });
     animatedOut = true;
   }
+
+  columns.subscribe((col) => {
+    animatedOut = false;
+  });
 </script>
 
 <div class="main-title">
