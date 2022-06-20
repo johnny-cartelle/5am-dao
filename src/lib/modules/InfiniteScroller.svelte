@@ -4,13 +4,14 @@
   import { onMount } from "svelte";
   import { animateMainTitleOut } from "./MainTitle.svelte";
 
-  let easeAmount = 0;
+  let easeAmount = 10;
   let element;
   let sourceBlock;
   let blockHeight = 0;
   let targetScrollPosition = 0;
   let currentScrollPosition = 0;
   let lastTouchY = 0;
+  let lastTouchDeltaY = 0;
   let allBlocksFadedIn = false;
   let rafId = null;
 
@@ -20,6 +21,7 @@
   }
 
   function onTouchStart(e) {
+    easeAmount = 1;
     lastTouchY = e.touches[0].clientY;
   }
 
@@ -28,7 +30,13 @@
     const deltaY = lastTouchY - clientY;
     targetScrollPosition += deltaY;
     lastTouchY = clientY;
+    lastTouchDeltaY = deltaY;
     animateMainTitleOut();
+  }
+
+  function onTouchEnd(e) {
+    easeAmount = 10;
+    targetScrollPosition += lastTouchDeltaY * 5;
   }
 
   function fadeInAllBlocks(direction) {
@@ -76,8 +84,6 @@
   }
 
   onMount(() => {
-    easeAmount = isTouch() ? 10 : 10;
-
     element.append(sourceBlock.cloneNode(true));
     element.append(sourceBlock.cloneNode(true));
 
@@ -92,12 +98,13 @@
     window.addEventListener("wheel", onWheel);
     window.addEventListener("touchstart", onTouchStart);
     window.addEventListener("touchmove", onTouchMove);
-
+    window.addEventListener("touchend", onTouchEnd);
     return () => {
       window.removeEventListener("resize", onResize);
       window.removeEventListener("wheel", onWheel);
       window.removeEventListener("touchstart", onTouchStart);
       window.removeEventListener("touchmove", onTouchMove);
+      window.removeEventListener("touchend", onTouchEnd);
       if (rafId) {
         cancelAnimationFrame(rafId);
       }
