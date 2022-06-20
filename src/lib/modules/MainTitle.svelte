@@ -126,7 +126,6 @@
   }
 
   .blink {
-    -webkit-animation: blink-animation 2s steps(2, start) infinite;
     animation: blink-animation 2s steps(2, start) infinite;
   }
 
