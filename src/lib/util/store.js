@@ -43,6 +43,6 @@ function getCity() {
 }
 
 const currentCity = getCity();
-let columns = writable(3);
+let columns = writable(0);
 
 export { currentCity, columns };

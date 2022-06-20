@@ -35,7 +35,7 @@
     $columns = cols;
   }
 
-  onMount(() => {
+  function init() {
     gsap.to(document.body, {
       duration: 1,
       opacity: 1,
@@ -43,9 +43,19 @@
       y: 0,
       ease: "Power1.easeInOut",
     });
-    window.addEventListener("resize", onResize);
     onResize();
     window.scrollTo(0, 0);
+  }
+
+  onMount(() => {
+    document.fonts.ready
+      .then(() => {
+        init();
+      })
+      .catch(() => {
+        console.log("Font load Error");
+      });
+    window.addEventListener("resize", onResize);
     return () => {
       window.removeEventListener("resize", onResize);
     };
