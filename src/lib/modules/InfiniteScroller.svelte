@@ -23,6 +23,7 @@
   function onTouchStart(e) {
     easeAmount = 1;
     lastTouchY = e.touches[0].clientY;
+    targetScrollPosition = currentScrollPosition;
   }
 
   function onTouchMove(e) {
