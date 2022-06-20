@@ -46,11 +46,8 @@
 </svelte:head>
 
 <div class="page">
-  <div class="title-tag">Creative Service DAO</div>
-
-  <MainTitle />
-
   {#if $columns == 3}
+    <MainTitle />
     <div class="columns three">
       <div class="column left">
         <div class="content-fixed">
@@ -70,7 +67,7 @@
       </div>
     </div>
   {:else if $columns == 2}
-    <!-- 2 columns -->
+    <MainTitle />
     <div class="columns two">
       <div class="column left">
         <CreativeService />
@@ -88,6 +85,8 @@
     <div class="columns one">
       <div class="column">
         <InfiniteScroller>
+          <div class="title-tag">Creative Service DAO</div>
+          <MainTitle />
           <MainInfo />
           <Hello />
           <CreativeService />
@@ -142,7 +141,7 @@
 
   @include column-count("1") {
     .page {
-      padding-top: 160px;
+      padding-top: 140px;
       padding-bottom: 160px;
     }
   }

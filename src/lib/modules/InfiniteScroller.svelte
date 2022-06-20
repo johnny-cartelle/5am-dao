@@ -108,3 +108,9 @@
 <div class="scroll-container" bind:this={element}>
   <div class="block" bind:this={sourceBlock}><slot /></div>
 </div>
+
+<style lang="scss">
+  .scroll-container {
+    will-change: transform;
+  }
+</style>

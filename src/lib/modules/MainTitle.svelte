@@ -5,14 +5,14 @@
 
   const scales = { 3: 0.06, 2: 0.1, 1: 0.1 };
   let animatedOut = false;
-  let mainTitle;
+  let mainTitleLong;
 
   export function animateMainTitleOut() {
     if (animatedOut) {
       return;
     }
 
-    gsap.to(mainTitle, {
+    gsap.to(mainTitleLong, {
       duration: 0.7,
       scale: scales[get(columns)],
       ease: "Power1.easeInOut",
@@ -21,7 +21,7 @@
   }
 </script>
 
-<div class="main-title" bind:this={mainTitle}>
+<div class="main-title">
   <svg
     class="main-title-short-svg"
     viewBox="0 0 356 111"
@@ -48,6 +48,7 @@
   </svg>
 
   <svg
+    bind:this={mainTitleLong}
     class="main-title-long-svg"
     viewBox="0 0 1125 191"
     fill="none"
@@ -88,9 +89,10 @@
 <style lang="scss">
   @import "../../styles/mixins.scss";
 
-  .main-title {
+  .main-title-long-svg {
     position: fixed;
     transform-origin: left center;
+    will-change: transform;
   }
 
   .main-title-long-svg,
@@ -103,12 +105,9 @@
   }
 
   @include column-count("2") {
-    .main-title {
-      width: calc(800px - 80px);
-    }
-
     .main-title-long-svg {
       display: block;
+      width: calc(800px - 80px);
     }
 
     .main-title-short-svg {
@@ -117,7 +116,7 @@
   }
 
   @include column-count("3") {
-    .main-title {
+    .main-title-long-svg {
       width: calc(1240px - 80px);
     }
   }
