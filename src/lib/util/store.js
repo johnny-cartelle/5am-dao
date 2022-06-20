@@ -40,11 +40,13 @@ function getCity() {
     minute: "numeric",
   });
 
-  const time = formatter12
-    .format(new Date())
-    .replace(":", '<span class="blink">:</span>');
+  console.log(formatter12.format(new Date()));
 
-  return { name: city, time: time };
+  const time = formatter12.format(new Date());
+  const blinkTime = time.replace(":", '<span class="blink">:</span>');
+  const htmlTime = "<div>" + blinkTime + "</div>";
+
+  return { name: city, htmlTime: htmlTime, time: time };
 }
 
 const currentCity = getCity();
