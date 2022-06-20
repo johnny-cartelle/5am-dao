@@ -33,6 +33,7 @@
   }
 
   onMount(() => {
+    document.body.style.display = "block";
     window.addEventListener("resize", onResize);
     onResize();
     return () => {
