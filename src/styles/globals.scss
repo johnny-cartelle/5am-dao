@@ -22,9 +22,9 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-webkit-tap-highlight-color: transparent;
 	background-color: var(--color-white);
-	visibility: hidden;
+	// visibility: hidden;
 	opacity: 0;
-	// transform: translateY(100px);
+	transform: translateY(100px);
 }
 
 

@@ -38,9 +38,8 @@
   onMount(() => {
     gsap.to(document.body, {
       duration: 1,
-      autoAlpha: 1,
+      opacity: 1,
       delay: 0.5,
-      // y: 0,
       ease: "Power1.easeInOut",
     });
     window.addEventListener("resize", onResize);
