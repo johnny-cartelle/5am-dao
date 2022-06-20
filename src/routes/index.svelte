@@ -40,6 +40,7 @@
       duration: 1,
       opacity: 1,
       delay: 0.5,
+      y: 0,
       ease: "Power1.easeInOut",
     });
     window.addEventListener("resize", onResize);
