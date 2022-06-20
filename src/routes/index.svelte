@@ -42,9 +42,11 @@
       delay: 0.5,
       y: 0,
       ease: "Power1.easeInOut",
+      onStart: () => {
+        onResize();
+      },
     });
     window.addEventListener("resize", onResize);
-    onResize();
     window.scrollTo(0, 0);
     return () => {
       window.removeEventListener("resize", onResize);
