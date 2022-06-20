@@ -125,4 +125,14 @@ strong, b {
 			  user-select: none; /* Non-prefixed version, currently
 									supported by Chrome, Edge, Opera and Firefox */
   }
+
+.blink {
+animation: blink-animation 2s steps(2, start) infinite;
+}
+
+@keyframes blink-animation {
+to {
+	visibility: hidden;
+}
+}
   

@@ -3,7 +3,7 @@
   import { columns } from "$lib/util/store";
   import { get } from "svelte/store";
 
-  const scales = { 3: 0.06, 2: 0.1, 1: 0.1 };
+  const scales = { 3: 0.16, 2: 0.28, 1: 0.1 };
   let animatedOut = false;
   let mainTitleLong;
 
@@ -122,16 +122,6 @@
   @include column-count("3") {
     .main-title-long-svg {
       width: calc(1240px - 80px);
-    }
-  }
-
-  .blink {
-    animation: blink-animation 2s steps(2, start) infinite;
-  }
-
-  @keyframes blink-animation {
-    to {
-      visibility: hidden;
     }
   }
 </style>

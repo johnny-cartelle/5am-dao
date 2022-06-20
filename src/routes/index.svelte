@@ -18,10 +18,11 @@
 
   const seoEntry = {
     fields: {
-      title: "",
-      description: "",
-      keywords: "",
-      image: "",
+      title: "5AM DAO",
+      description:
+        "5:AM has set out to become the creative powerhouse of the 21st century.",
+      keywords: "5AM DAO",
+      image: "/static/5am-og-share.jpg",
     },
   };
 
@@ -36,7 +37,6 @@
   }
 
   function init() {
-    console.log("index init");
     gsap.to(document.body, {
       duration: 1,
       opacity: 1,

@@ -12,11 +12,10 @@
     directors and other creative spirits, all working together to design how we interact
     with content and each other, both virtually and physically.
     <br /><br />
-    <strong
-      >In its first iteration, 5:AM will focus on projects in the context of
-      graphic, web, and product design.</strong
-    > We will use this vertical as a testing ground to develop the methodologies
-    that are most supportive of creative collaboration in a decentralized fashion.
+    In its first iteration, 5:AM will focus on projects in the context of graphic,
+    web, and product design. We will use this vertical as a testing ground to develop
+    the methodologies that are most supportive of creative collaboration in a decentralized
+    fashion.
   </p>
 </div>
 <div class="column-section">

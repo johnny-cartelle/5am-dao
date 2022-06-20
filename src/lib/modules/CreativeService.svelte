@@ -5,9 +5,9 @@
 <div class="column-section">
   <div class="column-title">Creative Service DAO</div>
   <p class="light">
-    Its 5:AM somewhere.<br />
+    Its 5<span class="blink">:</span>AM somewhere.<br />
     {currentCity.name}<br /><br />
-    {currentCity.time}
+    {@html currentCity.time}
   </p>
 </div>
 

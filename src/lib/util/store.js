@@ -39,7 +39,12 @@ function getCity() {
     hour: "numeric",
     minute: "numeric",
   });
-  return { name: city, time: formatter12.format(new Date()) };
+
+  const time = formatter12
+    .format(new Date())
+    .replace(":", '<span class="blink">:</span>');
+
+  return { name: city, time: time };
 }
 
 const currentCity = getCity();

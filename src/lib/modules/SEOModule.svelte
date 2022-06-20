@@ -1,14 +1,14 @@
 <script>
-	import { getContentfulImageUrl } from '$lib/util/helpers';
+  import { getContentfulImageUrl } from "$lib/util/helpers";
 
-	export let entry;
-	export let path;
+  export let entry;
+  export let path;
 
-	const title = entry.fields.title;
-	const description = entry.fields.description;
-	const keywords = entry.fields.keywords;
-	const imageUrl = getContentfulImageUrl(entry.fields.image);
-	const url = 'https://july.fund/' + path;
+  const title = entry.fields.title;
+  const description = entry.fields.description;
+  const keywords = entry.fields.keywords;
+  const imageUrl = entry.fields.image;
+  const url = "https://july.fund/" + path;
 </script>
 
 <title>{title}</title>
