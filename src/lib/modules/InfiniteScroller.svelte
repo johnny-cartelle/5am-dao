@@ -111,6 +111,6 @@
 
 <style lang="scss">
   .scroll-container {
-    will-change: transform;
+    // will-change: transform;
   }
 </style>
