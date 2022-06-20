@@ -18,7 +18,7 @@
 
   const seoEntry = {
     fields: {
-      title: "5AM DAO ",
+      title: "5AM DAO",
       description:
         "5:AM has set out to become the creative powerhouse of the 21st century.",
       keywords: "5AM DAO",
