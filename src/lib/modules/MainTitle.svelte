@@ -1,7 +1,27 @@
-<script>
+<script context="module">
+  import gsap from "gsap";
+  import { columns } from "$lib/util/store";
+  import { get } from "svelte/store";
+
+  const scales = { 3: 0.06, 2: 0.1, 1: 0.1 };
+  let animatedOut = false;
+  let mainTitle;
+
+  export function animateMainTitleOut() {
+    if (animatedOut) {
+      return;
+    }
+
+    gsap.to(mainTitle, {
+      duration: 0.7,
+      scale: scales[get(columns)],
+      ease: "Power1.easeInOut",
+    });
+    animatedOut = true;
+  }
 </script>
 
-<div class="main-title">
+<div class="main-title" bind:this={mainTitle}>
   <svg
     class="main-title-short-svg"
     viewBox="0 0 356 111"
@@ -68,6 +88,11 @@
 <style lang="scss">
   @import "../../styles/mixins.scss";
 
+  .main-title {
+    position: fixed;
+    transform-origin: left center;
+  }
+
   .main-title-long-svg,
   .main-title-short-svg {
     width: 100%;
@@ -77,13 +102,9 @@
     display: none;
   }
 
-  .main-title {
-    margin-bottom: 70px;
-  }
-
   @include column-count("2") {
     .main-title {
-      margin-bottom: 130px;
+      width: calc(800px - 80px);
     }
 
     .main-title-long-svg {
@@ -92,6 +113,12 @@
 
     .main-title-short-svg {
       display: none;
+    }
+  }
+
+  @include column-count("3") {
+    .main-title {
+      width: calc(1240px - 80px);
     }
   }
 

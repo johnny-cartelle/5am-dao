@@ -1,4 +1,5 @@
 import timezones from "$lib/json/cities-timezones.json";
+import { writable } from "svelte/store";
 import { shuffle } from "./helpers";
 
 // get the closest city to 5am
@@ -42,5 +43,6 @@ function getCity() {
 }
 
 const currentCity = getCity();
+let columns = writable(3);
 
-export { currentCity };
+export { currentCity, columns };

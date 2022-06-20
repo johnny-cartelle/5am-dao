@@ -10,6 +10,10 @@
 	--max-card-width: 450px;
 }
 
+body, html {
+	overflow: hidden;
+}
+
 body {
 	font-family: 'NeueHaasGroteskDisp Pro';
 	margin: 0;

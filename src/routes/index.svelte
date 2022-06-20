@@ -6,6 +6,14 @@
   import SEOModule from "./../lib/modules/SEOModule.svelte";
   import { onMount } from "svelte";
   import MainTitle from "$lib/modules/MainTitle.svelte";
+  import InfiniteScroller from "$lib/modules/InfiniteScroller.svelte";
+  import { columns } from "$lib/util/store";
+
+  const breakpoints = [
+    { width: 0, columns: 1 },
+    { width: 800, columns: 2 },
+    { width: 1240, columns: 3 },
+  ];
 
   const seoEntry = {
     fields: {
@@ -16,7 +24,17 @@
     },
   };
 
+  function onResize() {
+    breakpoints.forEach((breakpoint) => {
+      if (window.innerWidth >= breakpoint.width) {
+        $columns = breakpoint.columns;
+      }
+    });
+  }
+
   onMount(() => {
+    window.addEventListener("resize", onResize);
+    onResize();
     return () => {
       window.removeEventListener("resize", onResize);
     };
@@ -29,47 +47,55 @@
 
 <div class="page">
   <div class="title-tag">Creative Service DAO</div>
+
   <MainTitle />
 
-  <!-- 3 columns -->
-  <div class="columns three">
-    <div class="column left">
-      <div class="content-fixed">
-        <CreativeService />
+  {#if $columns == 3}
+    <div class="columns three">
+      <div class="column left">
+        <div class="content-fixed">
+          <CreativeService />
+        </div>
+      </div>
+      <div class="column center">
+        <InfiniteScroller>
+          <MainInfo />
+          <Copyright />
+        </InfiniteScroller>
+      </div>
+      <div class="column right">
+        <div class="content-fixed">
+          <Hello />
+        </div>
       </div>
     </div>
-    <div class="column center">
-      <MainInfo />
-      <Copyright />
-    </div>
-    <div class="column right">
-      <div class="content-fixed">
+  {:else if $columns == 2}
+    <!-- 2 columns -->
+    <div class="columns two">
+      <div class="column left">
+        <CreativeService />
         <Hello />
       </div>
+      <div class="column right">
+        <InfiniteScroller>
+          <MainInfo />
+          <Copyright />
+        </InfiniteScroller>
+      </div>
     </div>
-  </div>
-
-  <!-- 2 columns -->
-  <div class="columns two">
-    <div class="column left">
-      <CreativeService />
-      <Hello />
+  {:else}
+    <!-- 1 column -->
+    <div class="columns one">
+      <div class="column">
+        <InfiniteScroller>
+          <MainInfo />
+          <Hello />
+          <CreativeService />
+          <Copyright />
+        </InfiniteScroller>
+      </div>
     </div>
-    <div class="column right">
-      <MainInfo />
-      <Copyright />
-    </div>
-  </div>
-
-  <!-- 1 column -->
-  <div class="columns one">
-    <div class="column">
-      <MainInfo />
-      <Hello />
-      <CreativeService />
-      <Copyright />
-    </div>
-  </div>
+  {/if}
 </div>
 
 <style lang="scss">
@@ -85,8 +111,13 @@
     position: fixed;
   }
 
+  .columns {
+    display: flex;
+  }
+
   .columns.three {
     justify-content: space-between;
+    margin-top: 340px;
 
     .column.left {
       width: 208px;
@@ -102,6 +133,8 @@
   }
 
   .columns.two {
+    margin-top: 260px;
+
     .column {
       flex: 1;
     }
@@ -112,15 +145,6 @@
       padding-top: 160px;
       padding-bottom: 160px;
     }
-    .columns.one {
-      display: flex;
-    }
-    .columns.two {
-      display: none;
-    }
-    .columns.three {
-      display: none;
-    }
   }
 
   @include column-count("2") {
@@ -129,30 +153,12 @@
       padding-top: 160px;
       padding-bottom: 160px;
     }
-    .columns.one {
-      display: none;
-    }
-    .columns.two {
-      display: flex;
-    }
-    .columns.three {
-      display: none;
-    }
   }
 
   @include column-count("3") {
     .page {
       max-width: 1240px;
       padding-top: 160px;
-    }
-    .columns.one {
-      display: none;
-    }
-    .columns.two {
-      display: none;
-    }
-    .columns.three {
-      display: flex;
     }
   }
 </style>
