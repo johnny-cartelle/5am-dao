@@ -7,7 +7,7 @@
   <p class="light">
     Its 5<span class="blink">:</span>AM somewhere.<br />
     {currentCity.name}<br /><br />
-    {@html currentCity.htmlTime}
+    {currentCity.time}
   </p>
 </div>
 

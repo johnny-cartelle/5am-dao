@@ -40,10 +40,8 @@ function getCity() {
     minute: "numeric",
   });
 
-  console.log(formatter12.format(new Date()));
-
   const time = formatter12.format(new Date());
-  const blinkTime = time.replace(":", '<span class="blink">:</span>');
+  const blinkTime = time.replace(":", "<span class='blink'>:</span>");
   const htmlTime = "<div>" + blinkTime + "</div>";
 
   return { name: city, htmlTime: htmlTime, time: time };
