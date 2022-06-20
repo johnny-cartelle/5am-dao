@@ -42,7 +42,7 @@ function getCity() {
 
   const time = formatter12.format(new Date());
   const blinkTime = time.replace(":", "<span class='blink'>:</span>");
-  const htmlTime = "<div>" + blinkTime + "</div>";
+  const htmlTime = "<span>" + blinkTime + "</span>";
 
   return { name: city, htmlTime: htmlTime, time: time };
 }
