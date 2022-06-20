@@ -36,6 +36,7 @@
   }
 
   function init() {
+    console.log("index init");
     gsap.to(document.body, {
       duration: 1,
       opacity: 1,
@@ -50,6 +51,7 @@
   onMount(() => {
     document.fonts.ready
       .then(() => {
+        console.log("fonts are ready");
         init();
       })
       .catch(() => {

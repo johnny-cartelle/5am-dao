@@ -81,6 +81,8 @@
 
   function onResize() {
     blockHeight = sourceBlock.clientHeight;
+    console.log("setting block height", blockHeight);
+
     currentScrollPosition = targetScrollPosition = blockHeight;
   }
 
