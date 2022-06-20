@@ -3,7 +3,7 @@
   <ul class="contact-list">
     <li><span class="light">Applications (Soon)</span></li>
     <li><a href="https://twitter.com/5amdao" target="_blank">Twitter</a></li>
-    <li><a href="mailto:hello@5amdao.xyz">Email</a></li>
+    <li><a href="mailto:hello@5amdao.xyz" target="_blank">Email</a></li>
   </ul>
 </div>
 

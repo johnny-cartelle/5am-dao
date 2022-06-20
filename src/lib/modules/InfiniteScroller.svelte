@@ -88,11 +88,8 @@
     element.append(sourceBlock.cloneNode(true));
     element.append(sourceBlock.cloneNode(true));
 
-    window.scrollTo(0, 0);
     onResize();
-
     gsap.set([element.childNodes[0]], { opacity: 0 });
-
     render();
 
     window.addEventListener("resize", onResize);

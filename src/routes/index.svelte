@@ -43,6 +43,7 @@
     });
     window.addEventListener("resize", onResize);
     onResize();
+    window.scrollTo(0, 0);
     return () => {
       window.removeEventListener("resize", onResize);
     };
