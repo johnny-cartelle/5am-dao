@@ -2,8 +2,8 @@
   <div class="column-title">Hello</div>
   <ul class="contact-list">
     <li><span class="light">Applications (Soon)</span></li>
-    <li><a href="www.twitter.com">Twitter</a></li>
-    <li><a href="www.twitter.com">Email</a></li>
+    <li><a href="https://twitter.com/5amdao" target="_blank">Twitter</a></li>
+    <li><a href="mailto:hello@5amdao.xyz">Email</a></li>
   </ul>
 </div>
 

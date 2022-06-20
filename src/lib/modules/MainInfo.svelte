@@ -5,7 +5,7 @@
     are convinced that by creating a decentralized platform & community for
     creatives of all kinds to come together to work on the projects that will
     power the future of web3, we can bring out the maximum creativity in all of
-    us
+    us.
     <br /><br />
     Our vision is to build this into a genre and borders-defying creativity engine.
     We are a cohort of the best architects, best motion designers, NFT artists, movie
