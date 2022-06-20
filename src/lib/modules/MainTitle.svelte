@@ -13,7 +13,7 @@
     }
 
     gsap.to(mainTitleLong, {
-      duration: 0.7,
+      duration: 0.8,
       scale: scales[get(columns)],
       ease: "Power1.easeInOut",
     });
