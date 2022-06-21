@@ -22,7 +22,7 @@
       description:
         "5:AM has set out to become the creative powerhouse of the 21st century.",
       keywords: "5AM DAO",
-      image: "/static/5am-og-share.jpg",
+      image: "https://www.5amdao.xyz/5am-og-share.jpg",
     },
   };
 
