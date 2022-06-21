@@ -37,7 +37,7 @@
 
   function onTouchEnd(e) {
     easeAmount = 10;
-    targetScrollPosition += lastTouchDeltaY * 5;
+    targetScrollPosition += lastTouchDeltaY * 10;
   }
 
   function fadeInAllBlocks(direction) {
