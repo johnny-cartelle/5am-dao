@@ -34,7 +34,7 @@ function getCity() {
     ];
 
   // format display time for the closest timezone
-  const formatter12 = new Intl.DateTimeFormat([], {
+  const formatter12 = new Intl.DateTimeFormat("en-US", {
     timeZone: closestTimezone.code,
     hour: "numeric",
     minute: "numeric",
