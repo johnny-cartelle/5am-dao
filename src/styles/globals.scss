@@ -60,7 +60,7 @@ strong, b {
 }
 
 .light {
-	color: var(--color--light-grey);
+	color: var(--color--light-grey) !important;
 }
 
 .title-tag {
