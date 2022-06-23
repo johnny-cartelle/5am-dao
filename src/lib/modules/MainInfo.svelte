@@ -1,21 +1,18 @@
 <div class="column-section">
   <div class="column-title">Info</div>
   <p>
-    5:AM has set out to become the creative powerhouse of the 21st century. We
-    are convinced that by creating a decentralized platform & community for
-    creatives of all kinds to come together to work on the projects that will
-    power the future of web3, we can bring out the maximum creativity in all of
-    us.
+    We’re rethinking creative collaboration, one creative field at a time,
+    starting with graphic, web, and product design.
     <br /><br />
-    Our vision is to build this into a genre and borders-defying creativity engine.
-    We are a cohort of the best architects, best motion designers, NFT artists, movie
-    directors and other creative spirits, all working together to design how we interact
-    with content and each other, both virtually and physically.
+    We have set out to become the creative powerhouse of the 21st century. We are
+    convinced that by creating a decentralized platform & community for creatives
+    of all kinds to come together to work on the projects that will power the future
+    of web3, we can deliver world-class outcomes.
     <br /><br />
-    In its first iteration, 5:AM will focus on projects in the context of graphic,
-    web, and product design. We will use this vertical as a testing ground to develop
-    the methodologies that are most supportive of creative collaboration in a decentralized
-    fashion.
+    We are genre and borders-defying. We are a cohort of world-class product designers,
+    motion designers, investors, digital artists, strategists, and other creative
+    spirits, all driven to redesign how we interact with content and each other,
+    virtually and physically.
   </p>
 </div>
 <div class="column-section">

@@ -20,7 +20,7 @@
     fields: {
       title: "5AM DAO",
       description:
-        "5:AM has set out to become the creative powerhouse of the 21st century.",
+        "A Creative Service DAO reshaping creative collaboration one creative field at a time.",
       keywords: "5AM DAO",
       image: "https://www.5amdao.xyz/5am-og-share.jpg",
     },
