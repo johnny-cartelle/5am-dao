@@ -11,13 +11,13 @@
 }
 
 html, body {
-	position: fixed;
 	overflow: hidden;
 	height: 100%;
 	width: 100%;
 }
 
 body {
+	position: fixed;
 	font-family: 'NeueHaasGroteskDisp Pro';
 	margin: 0;
 	color: var(--color-black);
