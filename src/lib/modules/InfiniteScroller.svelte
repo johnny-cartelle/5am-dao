@@ -95,15 +95,15 @@
 
     window.addEventListener("resize", onResize);
     window.addEventListener("wheel", onWheel);
-    document.addEventListener("touchstart", onTouchStart);
-    document.addEventListener("touchmove", onTouchMove);
-    document.addEventListener("touchend", onTouchEnd);
+    document.body.addEventListener("touchstart", onTouchStart);
+    document.body.addEventListener("touchmove", onTouchMove);
+    document.body.addEventListener("touchend", onTouchEnd);
     return () => {
       window.removeEventListener("resize", onResize);
       window.removeEventListener("wheel", onWheel);
-      document.removeEventListener("touchstart", onTouchStart);
-      document.removeEventListener("touchmove", onTouchMove);
-      document.removeEventListener("touchend", onTouchEnd);
+      document.body.removeEventListener("touchstart", onTouchStart);
+      document.body.removeEventListener("touchmove", onTouchMove);
+      document.body.removeEventListener("touchend", onTouchEnd);
       if (rafId) {
         cancelAnimationFrame(rafId);
       }
