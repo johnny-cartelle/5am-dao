@@ -27,6 +27,7 @@
   }
 
   function onTouchMove(e) {
+    e.preventDefault();
     const clientY = e.changedTouches[0].clientY;
     const deltaY = lastTouchY - clientY;
     targetScrollPosition += deltaY;
