@@ -9,7 +9,7 @@
     of all kinds to come together to work on the projects that will power the future
     of web3, we can deliver world-class outcomes.
     <br /><br />
-    We are genre and borders-defying. We are a cohort of world-class product designers,
+    We are genre and border-defying. We are a cohort of world-class product designers,
     motion designers, investors, digital artists, strategists, and other creative
     spirits, all driven to redesign how we interact with content and each other,
     virtually and physically.
@@ -21,10 +21,10 @@
   <ul class="project-list">
     <li>
       <div class="project-title">Flamingo DAO</div>
-      <p class="light">Branding and Webdesign</p>
+      <p class="light">Branding and Web Design</p>
     </li>
     <li>
-      <div class="project-title">Tribute DAO</div>
+      <div class="project-title">Tribute Labs</div>
       <p class="light">Redesign and Dapp Dev</p>
     </li>
   </ul>

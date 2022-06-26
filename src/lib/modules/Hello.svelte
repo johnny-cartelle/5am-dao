@@ -2,10 +2,14 @@
   <div class="column-title">Hello</div>
   <ul class="contact-list">
     <li>
-      <a class="disabled light" href="#" target="_blank">Become a Member</a>
+      <a href="https://luugdxql40e.typeform.com/to/q8pftib5" target="_blank"
+        >Become a Member</a
+      >
     </li>
     <li>
-      <a class="disabled light" href="#" target="_blank">Request Service</a>
+      <a href="https://luugdxql40e.typeform.com/to/bJm2JNgL" target="_blank"
+        >Request Service</a
+      >
     </li>
     <li>
       <a href="https://twitter.com/5amdao" target="_blank">Twitter</a>
